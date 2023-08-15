@@ -34,16 +34,16 @@
 	</div>
 </div>
            <script>
-			   function genQRCode(){
+		        function genQRCode(){
 			    const charx = document.querySelector("#text_code").value
 			    const sizex = document.querySelector("#sizex").value
 			    console.log(charx)
 				if(!charx || !sizex){
-					document.querySelector("#text_code").innerHTML = alert("NULL")
-					}else{
+					alert("NULL")
+				}else{
 					document.querySelector("#qrcode").innerHTML = ("<img src='https://chart.googleapis.com/chart?chs="+sizex+"&cht=qr&chl="+charx+"&choe=UTF-8'>")
-					}
 				}
+			}
 			</script>
 </body>
 </html>
